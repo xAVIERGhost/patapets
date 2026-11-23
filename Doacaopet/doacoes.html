@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pata Perto | Doações</title>
+  <link rel="stylesheet" href="style.css">
+  
+     <style>
+        * {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+.formulario {
+  max-width: 500px;
+  margin: 20px auto;
+  padding: 24px;
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  font-family: Arial, sans-serif;
+}
+
+.formulario label {
+  display: block;
+  margin: 14px 0 6px;
+  font-weight: bold;
+}
+
+.formulario input,
+.formulario select,
+.formulario textarea {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #bbb;
+  border-radius: 6px;
+  font: inherit;
+}
+
+.formulario textarea {
+  min-height: 100px;
+  resize: vertical;
+}
+
+.formulario button {
+  width: 100%;
+  margin-top: 18px;
+  padding: 11px;
+  border: none;
+  border-radius: 6px;
+  background-color: #176b57;
+  color: white;
+  font-size: 1rem;
+  cursor: pointer;
+}
+
+.formulario button:hover {
+  background-color: #125443;
+}
+header {
+  background-color: #176b57;
+  color: white;
+  padding: 18px;
+}
+
+header a {
+  color: white;
+}
+
+
+
+    </style>
+</head>
+<body>
+  <header>
+    <h1 class="logo">🐾 Pata Perto</h1>
+    <nav aria-label="Navegação principal">
+      <a href="index.html">Início</a>
+      <a href="pets.html">Pets</a>
+      <a href="cadastro.html">Cadastro</a>
+      <a href="doacoes.html">Doações</a>
+    </nav>
+  </header>
+
+  <main>
+    <h2>Ajude os animais</h2>
+    <p>
+      Você pode oferecer itens para ajudar no cuidado dos pets.
+      Preencha o formulário para registrar sua intenção de doação.
+    </p>
+
+    <form class="formulario" action="#" method="post">
+      <label for="nome">Seu nome:</label>
+      <input type="text" id="nome" name="nome" required><br>
+
+      <label for="email">E-mail para contato:</label>
+      <input type="email" id="email" name="email" required><br>     
+      <label for="tipo">O que você gostaria de doar?</label>
+      <select id="tipo" name="tipo" required>
+        <option value="">Selecione um item</option>
+        <option value="racao">Ração</option>
+        <option value="cobertor">Cobertores ou mantas</option>
+        <option value="brinquedo">Brinquedos</option>
+        <option value="medicamento">Medicamentos</option>
+        <option value="outro">Outro item</option>
+      </select><br>
+
+      <label for="cidade">Cidade</label>
+      <input type="text" id="cidade" name="cidade" required>
+         <label for="detalhes">Detalhes da doação</label>
+      <textarea
+        id="detalhes"
+        name="detalhes"
+        placeholder="Informe quantidade, estado do item ou outras informações."
+      ></textarea><br><br>
+
+      <button class="botao" type="submit">Registrar interesse</button>
+
+      <p class="aviso">
+        Este formulário é apenas uma demonstração.
+      </p>
+   
+    </form>
+  </main>
+
+  <footer>
+    <h3>
+    <p>Projeto Pata Perto</p> </h3>
+  </footer>
+</body>
+</html>

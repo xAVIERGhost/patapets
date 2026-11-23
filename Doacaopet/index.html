@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pata Pets | Início</title>
+  <link rel="stylesheet" href="style.css">
+     <style>
+        * {
+            font-family: Arial, Helvetica, sans-serif;
+        }body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: #fffaf5;
+  color: #333;
+}
+
+header {
+  background-color: #176b57;
+  color: white;
+  padding: 18px;
+}
+
+.logo {
+  margin: 0 0 10px;
+}
+
+nav a {
+  color: white;
+  margin-right: 14px;
+  text-decoration: none;
+}
+
+nav a:hover {
+  text-decoration: underline;
+}
+
+main {
+  max-width: 1000px;
+  margin: 30px auto;
+  padding: 0 20px;
+}
+
+.hero {
+  padding: 40px 20px;
+  background-color: #e5f2eb;
+  border-radius: 10px;
+  text-align: center;
+}
+
+.hero h2 {
+  color: #176b57;
+}
+
+.grade {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.card {
+  flex: 1;
+  min-width: 220px;
+  padding: 18px;
+  background-color: white;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+}
+
+.card h3 {
+  color: #176b57;
+}
+
+.botao {
+  display: inline-block;
+  margin-top: 10px;
+  padding: 10px 14px;
+  background-color: #e98252;
+  color: white;
+  border-radius: 6px;
+  text-decoration: none;
+}
+
+.botao:hover {
+  background-color: #c9683e;
+}
+
+footer {
+  margin-top: 35px;
+  padding: 15px;
+  background-color: #e5f2eb;
+  text-align: center;
+}
+
+@media (max-width: 600px) {
+  .grade {
+    flex-direction: column;
+  }
+}
+
+
+    </style>
+</head>
+<body>
+  <header>
+    <h1 class="logo">🐾 Pata Pets</h1>
+    <nav aria-label="Navegação principal">
+      <a href="index.html">Início</a>
+      <a href="pets.html">Pets</a>
+      <a href="cadastro.html">Cadastro</a>
+      <a href="doacoes.html">Doações</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero">
+      <h2>Um novo lar pode mudar tudo</h2>
+      <p>
+        Encontre um amigo para a vida toda ou ajude animais que precisam
+        de cuidado e carinho.
+      </p>
+      <a class="botao" href="pets.html">Conheça os pets</a>
+    </section>
+
+    <section>
+      <h2>Como você pode ajudar?</h2>
+      <div class="grade">
+        <article class="card">
+          <h3>Adote</h3>
+          <p>Conheça cães e gatos que estão esperando por uma família.</p>
+          <a href="pets.html">Ver pets disponíveis</a>
+        </article>
+
+        <article class="card">
+          <h3>Faça uma doação</h3>
+          <p>Ração, cobertores e outros itens ajudam no cuidado dos animais.</p>
+          <a href="doacoes.html">Quero ajudar</a>
+        </article>
+
+        <article class="card">
+          <h3>Cadastre-se</h3>
+          <p>Crie seu cadastro para acompanhar as oportunidades de adoção.</p>
+          <a href="cadastro.html">Criar cadastro</a>
+        </article>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>Projeto Pata Perto • Feito com carinho pelos animais</p>
+  </footer>
+</body>
+</html>
